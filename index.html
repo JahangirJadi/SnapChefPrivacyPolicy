@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Privacy Policy - SnapChef</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        >
+        <style>
+            :root {
+                --primary-color: #f97316;
+                --text-color: #1f2937;
+                --bg-color: #ffffff;
+                --secondary-text: #4b5563;
+                --border-color: #e5e7eb;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg-color: #111827;
+                    --text-color: #f3f4f6;
+                    --secondary-text: #9ca3af;
+                    --border-color: #374151;
+                }
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Inter", system-ui, -apple-system, sans-serif;
+                line-height: 1.6;
+                color: var(--text-color);
+                background-color: var(--bg-color);
+                padding: 2rem 1rem;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background: var(--bg-color);
+                padding: 2.5rem;
+                border-radius: 1rem;
+                box-shadow:
+                    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                border: 1px solid var(--border-color);
+            }
+
+            h1 {
+                font-size: 2.25rem;
+                font-weight: 800;
+                margin-bottom: 0.5rem;
+                color: var(--primary-color);
+                letter-spacing: -0.025em;
+            }
+
+            .effective-date {
+                font-size: 0.875rem;
+                color: var(--secondary-text);
+                margin-bottom: 2.5rem;
+                font-weight: 500;
+            }
+
+            section {
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            h2 span {
+                color: var(--primary-color);
+                font-size: 1.25rem;
+                opacity: 0.8;
+            }
+
+            p {
+                margin-bottom: 1.25rem;
+                color: var(--secondary-text);
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1.25rem;
+            }
+
+            li {
+                margin-bottom: 0.75rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            li::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.6rem;
+                width: 6px;
+                height: 6px;
+                background-color: var(--primary-color);
+                border-radius: 50%;
+            }
+
+            strong {
+                color: var(--text-color);
+                font-weight: 600;
+            }
+
+            hr {
+                border: 0;
+                border-top: 1px solid var(--border-color);
+                margin: 2rem 0;
+            }
+
+            footer {
+                margin-top: 3rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid var(--border-color);
+                text-align: center;
+                font-size: 0.875rem;
+                color: var(--secondary-text);
+            }
+
+            @media (max-width: 640px) {
+                .container {
+                    padding: 1.5rem;
+                    box-shadow: none;
+                    border: none;
+                }
+                h1 {
+                    font-size: 1.75rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <h1>Privacy Policy for SnapChef</h1>
+            <p class="effective-date">Effective Date: February 10, 2026</p>
+
+            <section>
+                <h2><span>1.</span> Introduction</h2>
+                <p>
+                    Welcome to <strong>SnapChef</strong>. We respect your
+                    privacy and are committed to protecting your personal data.
+                    This policy explains how we handle your information when you
+                    use our mobile application to extract recipes from video
+                    links.
+                </p>
+            </section>
+
+            <section>
+                <h2><span>2.</span> Data We Collect</h2>
+                <ul>
+                    <li>
+                        <strong>Account Information:</strong> When you sign in
+                        via Google, we collect your email address, name, and
+                        profile picture to create your SnapChef profile.
+                    </li>
+                    <li>
+                        <strong>User Content:</strong> We store the video URLs
+                        you submit and the resulting recipe data (ingredients,
+                        steps, images) in our secure database.
+                    </li>
+                    <li>
+                        <strong>Inventory Data:</strong> If you use the Pantry
+                        feature, we store the list of ingredients currently in
+                        your kitchen.
+                    </li>
+                    <li>
+                        <strong>Payment Data:</strong> We use RevenueCat and
+                        Google Play Billing to process subscriptions. We do not
+                        store your credit card details on our servers.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span>3.</span> How We Use Your Data</h2>
+                <ul>
+                    <li>
+                        <strong>AI Processing:</strong> We share the video
+                        transcription with AI models (e.g., GPT-4o, Gemini) to
+                        extract recipe details. This data is processed
+                        anonymously where possible.
+                    </li>
+                    <li>
+                        <strong>Synchronization:</strong> We store your recipes
+                        in Supabase so you can access them across multiple
+                        devices.
+                    </li>
+                    <li>
+                        <strong>Usage Tracking:</strong> To enforce "Free" vs
+                        "Pro" limits, we track the number of extractions
+                        performed per month.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span>4.</span> Third-Party Services</h2>
+                <p>
+                    SnapChef integrates with the following third-party
+                    providers:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Supabase:</strong> For database storage and
+                        authentication.
+                    </li>
+                    <li>
+                        <strong>RevenueCat:</strong> For managing in-app
+                        subscriptions.
+                    </li>
+                    <li>
+                        <strong>Google/YouTube/Instagram:</strong> When you
+                        provide a link, we access the public content of that URL
+                        to generate your recipe.
+                    </li>
+                    <li>
+                        <strong>AI Providers:</strong> (OpenAI/Google) To
+                        provide the extraction service.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span>5.</span> Data Retention & Deletion</h2>
+                <p>
+                    You own your data. You may delete your account and all
+                    associated recipes at any time within the app settings. Once
+                    deleted, we remove your records from our active Supabase
+                    production database within 30 days.
+                </p>
+            </section>
+
+            <section>
+                <h2><span>6.</span> Security</h2>
+                <p>
+                    We use industry-standard encryption (SSL/TLS) for data in
+                    transit and Row Level Security (RLS) in Supabase to ensure
+                    that only you can access your private recipes and pantry.
+                </p>
+            </section>
+
+            <section>
+                <h2><span>7.</span> Changes to This Policy</h2>
+                <p>
+                    We may update our Privacy Policy from time to time. We will
+                    notify you of any changes by posting the new Privacy Policy
+                    on this page and updating the "Effective Date."
+                </p>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 SnapChef. All rights reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>
